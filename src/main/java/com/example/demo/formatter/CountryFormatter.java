@@ -26,6 +26,6 @@ public class CountryFormatter implements Formatter<Country> {
 
     @Override
     public String print(Country object, Locale locale) {
-        return "[" + object.getId() + ", " +object.getName() + "]";
+        return "["  + ", "  + "]";
     }
 }
