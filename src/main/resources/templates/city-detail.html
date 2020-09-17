@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+</head>
+<body>
+    <table class="table table-striped" th:object="${city}">
+        <tr>
+            <th>Tên: </th>
+            <td th:text="${city.cityName}"></td>
+        </tr>
+        <tr>
+            <th>Quốc gia: </th>
+            <td th:text="${city.country.name}"></td>
+        </tr>
+        <tr>
+            <th>Diện tích:</th>
+            <td th:text="${city.area}"></td>
+        </tr>
+        <tr>
+            <th>Dân số:</th>
+            <td th:text="${city.population}"></td>
+        </tr>
+        <tr>
+            <th>GDP: </th>
+            <td th:text="${city.GDP}"></td>
+        </tr>
+        <tr>
+            <th>Giới thiệu:</th>
+            <td th:text="${city.description}"></td>
+        </tr>
+        <tr>
+            <td><button><a href="/">Quay lại</a></button></td>
+        </tr>
+    </table>
+</body>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</html>
